@@ -1,2 +1,2 @@
 # Protogen-Training
-Unsucessful in connecting VS Code to Github
+Sucessfully connected VS Code to Github
