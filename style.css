@@ -1,0 +1,148 @@
+:root {
+  --navy: #1a2540;
+  --white: #fff;
+  --gray: #f5f6fa;
+  --text: #222;
+  --accent: #1a2540;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--gray);
+  color: var(--text);
+}
+header {
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(26,37,64,0.04);
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1rem;
+}
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #3a4a7c;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e3e6ee;
+  background: var(--white);
+}
+.hero {
+  background: var(--navy);
+  color: var(--white);
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.case-study button {
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: not-allowed;
+  opacity: 0.6;
+  margin-top: 2rem;
+}
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+.expertise-item {
+  background: var(--gray);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26,37,64,0.04);
+}
+.expertise-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--navy);
+}
+.expertise-item p {
+  font-size: 1rem;
+  color: #444;
+}
+.bio {
+  max-width: 700px;
+  text-align: center;
+}
+.bio h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--navy);
+}
+.bio p {
+  font-size: 1.1rem;
+  color: #333;
+}
+.contact {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+}
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.contact a {
+  color: var(--white);
+  background: #3a4a7c;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.contact a:hover {
+  background: #5060a8;
+}
+@media (max-width: 700px) {
+  .hero h1 { font-size: 2.2rem; }
+  section { padding: 2rem 0.5rem; }
+  .expertise-list { grid-template-columns: 1fr; }
+}
